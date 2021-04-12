@@ -1,0 +1,19 @@
+{
+  "name": "ui-common",
+  "version": "0.0.0",
+  "description": "通用组件",
+  "author": "heweizhi <heweizhi@guanmai.cn>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "lib/ui-common.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  }
+}
