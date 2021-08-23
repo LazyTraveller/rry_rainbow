@@ -445,7 +445,7 @@
    top: 50%;
    width: 1em;
  }
- @font-face {
+ /* @font-face {
    font-family: "percolate";
    src: url("./assets/icon/percolate.eot?-5w3um4");
    src: url("./assets/icon/percolate.eot?#iefix5w3um4") format("embedded-opentype"),
@@ -454,7 +454,7 @@
      url("./assets/icon/percolate.svg?5w3um4") format("svg");
    font-weight: normal;
    font-style: normal;
- }
+ } */
  [class^="icon-"],
  [class*=" icon-"] {
    font-family: "percolate";
