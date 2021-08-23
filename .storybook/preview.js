@@ -1,4 +1,6 @@
-import '../src/index.css'; //👈 The app's CSS file goes here
+import React from 'react'
+import { Observer } from 'mobx-react'
+import './style.less' //👈 The app's CSS file goes here
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -9,3 +11,15 @@ export const parameters = {
     },
   },
 }
+
+// 响应 mobx
+export const decorators = [
+  (storeFn) => (
+    <React.Fragment>
+      <Observer>{() => storeFn()}</Observer>
+      {/* <LayoutRoot /> */}
+    </React.Fragment>
+  ),
+]
+
+console.warn('less')

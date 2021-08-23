@@ -1,0 +1,84 @@
+@he-screen-sm: 768px;
+@he-screen-md: 992px;
+@he-screen-lg: 1200px;
+@he-screen-xl: 1920px;
+
+@he-screen-sm-min: @he-screen-sm;
+@he-screen-md-min: @he-screen-md;
+@he-screen-lg-min: @he-screen-lg;
+@he-screen-xl-min: @he-screen-xl;
+
+@he-screen-sm-max: @he-screen-md - 1px;
+@he-screen-md-max: @he-screen-lg - 1px;
+@he-screen-lg-max: @he-screen-xl - 1px;
+
+// grid
+@he-grid-columns: 24;
+
+:root {
+    // color
+    --he-color-placeholder: #b2b2b2;
+    --he-color-success: #1eac52;
+    --he-color-danger: #fa5151;
+    --he-color-link: #1e80e5;
+    --he-color-red: red;
+    --he-color-true-white: white; // 一定是白色
+    --he-color-true-black: black; // 一定是黑色
+  
+    --he-color-border: fade(#d8dee7, 50%);
+  
+    // bg
+    --he-color-bg-success: #1eac52;
+    --he-color-bg-danger: #fa5151;
+    --he-color-bg-switch: #afb5c0;
+    --he-color-bg-disabled: #f0f1f3;
+  
+    // active
+    --he-color-success-active: darken(#1eac52, 10%);
+    --he-color-danger-active: darken(#fa5151, 10%);
+    --he-color-bg-success-active: darken(#1eac52, 10%);
+    --he-color-bg-danger-active: darken(#fa5151, 10%);
+  
+    // 字体尺寸
+    --he-size-line-height: 1.33;
+    --he-size-text-12: 12px;
+    --he-size-text-14: 14px;
+    --he-size-text-16: 16px;
+    --he-size-text-18: 18px;
+    --he-size-text-20: 20px;
+  
+    // 大小
+    --he-size-form-height: 30px;
+    --he-size-border-radius: 2px;
+  
+    // 层级
+    --he-z-index-affix: 950;
+    --he-z-index-mask: 1000;
+    --he-z-index-right-side-modal-mask: 1040;
+    --he-z-index-right-side-modal: 1041;
+    --he-z-index-modal-mask: 1050;
+    --he-z-index-modal: 1051;
+    --he-z-index-tips: 7000;
+  
+    // 具体业务
+    // nav
+    --he-nav-size-width: 92px;
+    // modal
+    --he-modal-size-title-height: 40px;
+    // switch
+    --he-switch-size-height: 22px;
+    // border
+    --he-table-color-bg-head: #e8eaf0;
+    // head 上的动作，比如排序
+    --he-table-color-bg-head-action: #ccc;
+    --he-table-color-bg-head-action-active: #999;
+    --he-table-size-height-action-bar: 50px;
+    // card 标签
+    --he-card-bg-inactive: #d4d8d8;
+    // label 标签
+    --he-label-color-gray: #e8eaf0;
+    --he-label-color-inactive: #a5a8ad;
+    --he-label-color-danger: #d35147;
+    // checkbox radio
+    --he-checkbox-radio-color-disabled: #d4d8d8;
+}
