@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav } from './index'
 
-export const ComAffix = () => (
+export const ComNav = () => (
   <div>
     <div style={{ height: '400px' }} >
     <Nav />

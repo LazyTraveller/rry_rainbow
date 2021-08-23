@@ -1,7 +1,7 @@
 import React from 'react';
 import { Divider } from './index'
 
-export const ComAffix = () => (
+export const ComDivider = () => (
   <div>
     <div style={{ height: '400px' }} >
     <Divider />

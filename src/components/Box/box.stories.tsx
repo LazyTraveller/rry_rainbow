@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from './index'
 
-export const ComAffix = () => (
+export const ComBox = () => (
   <div>
     <div style={{ height: '400px' }} >
     <Box />

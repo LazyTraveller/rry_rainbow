@@ -13,13 +13,13 @@ export const parameters = {
 }
 
 // 响应 mobx
-export const decorators = [
-  (storeFn) => (
-    <React.Fragment>
-      <Observer>{() => storeFn()}</Observer>
-      {/* <LayoutRoot /> */}
-    </React.Fragment>
-  ),
-]
+// export const decorators = [
+//   (storeFn) => (
+//     <React.Fragment>
+//       <Observer>{() => storeFn()}</Observer>
+//       {/* <LayoutRoot /> */}
+//     </React.Fragment>
+//   ),
+// ]
 
 console.warn('less')

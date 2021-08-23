@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex } from './index'
 
-export const ComAffix = () => (
+export const ComFlex = () => (
   <div>
     <div style={{ height: '400px' }} >
     <Flex />

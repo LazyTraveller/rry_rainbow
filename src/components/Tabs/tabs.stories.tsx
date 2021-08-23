@@ -1,7 +1,7 @@
 import React from 'react';
 import { Tabs } from './index'
 
-export const ComAffix = () => (
+export const ComTabs = () => (
   <div>
     <div style={{ height: '400px' }} >
     <Tabs />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Collapse } from './index'
 
-export const ComAffix = () => (
+export const ComCollapse = () => (
   <div>
     <div style={{ height: '400px' }} >
     <Collapse />

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card } from './index'
 
-export const ComAffix = () => (
+export const ComCard = () => (
   <div>
     <div style={{ height: '400px' }} >
     <Card />

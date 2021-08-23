@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid } from './index'
 
-export const ComAffix = () => (
+export const ComGrid = () => (
   <div>
     <div style={{ height: '400px' }} >
     <Grid />
