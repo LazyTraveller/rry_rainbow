@@ -21,7 +21,10 @@
       "dom.iterable"
     ],
     "skipLibCheck": true,
-    "jsx": "react-jsx",
+    "types": [
+      "classnames"
+    ],
+    "jsx": "react",
     "typeRoots": [
       "node",
       "node_modules/@types"
@@ -29,6 +32,9 @@
     "rootDirs": [
       "./src"
     ],
+    "paths": {
+      "@/*": ["src/*"],
+    },
     "baseUrl": "./src",
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,

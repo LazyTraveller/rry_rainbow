@@ -1,6 +1,6 @@
 import React from 'react'
 import { Observer } from 'mobx-react'
-import './style.less' //👈 The app's CSS file goes here
+import '../src/index.less' //👈 The app's CSS file goes here
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

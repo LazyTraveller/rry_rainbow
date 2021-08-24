@@ -35,9 +35,6 @@ const webpackFinal = (config) => {
       },
       {
         loader: require.resolve('postcss-loader'),
-        options: {
-          postcssOptions: {},
-        },
       },
       {
         loader: 'less-loader',
