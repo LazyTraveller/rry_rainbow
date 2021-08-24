@@ -3,9 +3,9 @@ import { Button } from './Button';
 
 export const ComButton = () => (
   <div>
-   <Button primary  label='Button' />
-   <Button size='large'  label='Button' />
-   <Button size='small'  label='Button' />
+   <Button>Button</Button>
+   <Button size='large'>Button</Button>
+   <Button size='small'>Button</Button>
   </div>
 )
 

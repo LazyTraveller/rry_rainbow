@@ -9,10 +9,4 @@ export default {
   },
 }
 
-const Template = (args) => <Input {...args} />;
-
-export const Primary = Template.bind({});
-Primary.args = {
-  primary: true,
-  label: 'Button',
-};
+export const ComInput = () => <Input />
