@@ -9,7 +9,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "chromatic": "npx chromatic --project-token bd84f88ac050"
+    "chromatic": "npx chromatic --project-token bd84f88ac050",
+    "lint": "https://chromatic.com/library?appId=6075690af4b14500210b1b31&branch=<master>"
   },
   "eslintConfig": {
     "extends": [
