@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { Box } from './index'
 
 export const ComBox = () => (
   <div>
-    <div style={{ height: '400px' }} >
-    <Box />
+    <div style={{ height: '400px' }}>
+      <Box />
     </div>
   </div>
 )

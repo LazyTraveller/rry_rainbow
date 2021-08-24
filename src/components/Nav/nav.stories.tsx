@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { Nav } from './index'
 
 export const ComNav = () => (
   <div>
-    <div style={{ height: '400px' }} >
-    <Nav />
+    <div style={{ height: '400px' }}>
+      <Nav />
     </div>
   </div>
 )

@@ -1,11 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 function Divider() {
-  return (
-    <div>
-      Divider
-    </div>
-  );
+  return <div>Divider</div>
 }
 
-export default Divider;
+export default Divider

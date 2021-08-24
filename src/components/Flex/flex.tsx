@@ -1,11 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 function Flex() {
-  return (
-    <div>
-      Flex
-    </div>
-  );
+  return <div>Flex</div>
 }
 
-export default Flex;
+export default Flex

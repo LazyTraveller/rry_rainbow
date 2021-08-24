@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { Flex } from './index'
 
 export const ComFlex = () => (
   <div>
-    <div style={{ height: '400px' }} >
-    <Flex />
+    <div style={{ height: '400px' }}>
+      <Flex />
     </div>
   </div>
 )

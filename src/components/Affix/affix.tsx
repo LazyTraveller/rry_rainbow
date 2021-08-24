@@ -1,4 +1,4 @@
-import React, { FC, CSSProperties } from 'react';
+import React, { FC, CSSProperties } from 'react'
 import _ from 'lodash'
 import { AffixProps } from './type'
 import './style.less'
@@ -8,17 +8,18 @@ const Affix: FC<AffixProps> = ({ children, top, bottom }) => {
     position: 'sticky',
     zIndex: 950,
   }
+
   if (!_.isNil(top)) {
     style.top = `${top}px`
   }
-   if (!_.isNil(bottom)) {
-     style.bottom = `${bottom}px`
-   }
+  if (!_.isNil(bottom)) {
+    style.bottom = `${bottom}px`
+  }
   return (
     <div className='b-affix' style={style}>
       {children}
     </div>
-  );
+  )
 }
 
-export default Affix;
+export default Affix

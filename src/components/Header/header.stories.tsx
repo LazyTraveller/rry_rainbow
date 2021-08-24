@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 
-import { Header } from './Header';
+import { Header } from './Header'
 
 export default {
   title: '布局/Header',
   component: Header,
-};
+}
 
-export const Template = () => <Header  />;
+export const Template = () => <Header />

@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { Card } from './index'
 
 export const ComCard = () => (
   <div>
-    <div style={{ height: '400px' }} >
-    <Card />
+    <div style={{ height: '400px' }}>
+      <Card />
     </div>
   </div>
 )

@@ -3,6 +3,4 @@ interface AffixProps {
   bottom?: number
 }
 
-export type {
-  AffixProps
-}
+export type { AffixProps }

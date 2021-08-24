@@ -1,11 +1,11 @@
-import React from 'react';
-import { Button } from './Button';
+import React from 'react'
+import { Button } from './Button'
 
 export const ComButton = () => (
   <div>
-   <Button>Button</Button>
-   <Button size='large'>Button</Button>
-   <Button size='small'>Button</Button>
+    <Button>Button</Button>
+    <Button size='large'>Button</Button>
+    <Button size='small'>Button</Button>
   </div>
 )
 
@@ -15,4 +15,4 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-};
+}

@@ -1,11 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 function Collapse() {
-  return (
-    <div>
-      Collapse
-    </div>
-  );
+  return <div>Collapse</div>
 }
 
-export default Collapse;
+export default Collapse

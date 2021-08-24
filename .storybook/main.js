@@ -46,7 +46,10 @@ const webpackFinal = (config) => {
   })
 
   config.resolve.extensions.push('.ts', '.tsx')
-
+  // config.resolve.alias.push({
+  //   react: path.resolve(__dirname, '..', 'node_modules/react'),
+  //   '@': path.resolve(__dirname, '..', 'src'),
+  // })
   return config
 }
 

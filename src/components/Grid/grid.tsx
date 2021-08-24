@@ -1,11 +1,7 @@
-import React from 'react';
+import React from 'react'
 
 function Grid() {
-  return (
-    <div>
-      Grid
-    </div>
-  );
+  return <div>Grid</div>
 }
 
-export default Grid;
+export default Grid

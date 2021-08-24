@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { Grid } from './index'
 
 export const ComGrid = () => (
   <div>
-    <div style={{ height: '400px' }} >
-    <Grid />
+    <div style={{ height: '400px' }}>
+      <Grid />
     </div>
   </div>
 )

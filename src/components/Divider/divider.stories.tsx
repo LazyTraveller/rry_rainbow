@@ -1,10 +1,10 @@
-import React from 'react';
+import React from 'react'
 import { Divider } from './index'
 
 export const ComDivider = () => (
   <div>
-    <div style={{ height: '400px' }} >
-    <Divider />
+    <div style={{ height: '400px' }}>
+      <Divider />
     </div>
   </div>
 )
