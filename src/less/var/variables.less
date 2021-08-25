@@ -1,118 +1,118 @@
 // stylelint-disable
 
-@he-screen-sm: 768px;
-@he-screen-md: 992px;
-@he-screen-lg: 1200px;
-@he-screen-xl: 1920px;
+@m-screen-sm: 768px;
+@m-screen-md: 992px;
+@m-screen-lg: 1200px;
+@m-screen-xl: 1920px;
 
-@he-screen-sm-min: @he-screen-sm;
-@he-screen-md-min: @he-screen-md;
-@he-screen-lg-min: @he-screen-lg;
-@he-screen-xl-min: @he-screen-xl;
+@m-screen-sm-min: @m-screen-sm;
+@m-screen-md-min: @m-screen-md;
+@m-screen-lg-min: @m-screen-lg;
+@m-screen-xl-min: @m-screen-xl;
 
-@he-screen-sm-max: @he-screen-md - 1px;
-@he-screen-md-max: @he-screen-lg - 1px;
-@he-screen-lg-max: @he-screen-xl - 1px;
+@m-screen-sm-max: @m-screen-md - 1px;
+@m-screen-md-max: @m-screen-lg - 1px;
+@m-screen-lg-max: @m-screen-xl - 1px;
 
 // grid
-@he-grid-columns: 24;
+@m-grid-columns: 24;
 
 // 颜色会变
 :root {
   // color
-  --he-color-default: #000923; // 主内容
-  --he-color-secondary: rgba(36, 51, 81, 0.8); // 次要内容
-  --he-color-desc: #798294; // 描述内容
-  --he-color-primary: #56a3f2;
-  --he-color-disabled: rgba(0, 0, 0, 0.5);
+  --m-color-default: #000923; // 主内容
+  --m-color-secondary: rgba(36, 51, 81, 0.8); // 次要内容
+  --m-color-desc: #798294; // 描述内容
+  --m-color-primary: #56a3f2;
+  --m-color-disabled: rgba(0, 0, 0, 0.5);
 
-  --he-color-white: white;
-  --he-color-black: black;
+  --m-color-white: white;
+  --m-color-black: black;
 
   // bg
-  --he-color-bg-white: white;
-  --he-color-bg-back: #f7f8fa; // 背景色
-  --he-color-bg-primary: #56a3f2;
-  --he-color-bg-primary-light: #d7e8fc;
-  --he-color-bg-primary-more-light: #edf3f9;
+  --m-color-bg-white: white;
+  --m-color-bg-back: #f7f8fa; // 背景色
+  --m-color-bg-primary: #56a3f2;
+  --m-color-bg-primary-light: #d7e8fc;
+  --m-color-bg-primary-more-light: #edf3f9;
 
   // active
-  --he-color-primary-active: darken(#56a3f2, 10%);
-  --he-color-bg-primary-active: darken(#56a3f2, 10%);
+  --m-color-primary-active: darken(#56a3f2, 10%);
+  --m-color-bg-primary-active: darken(#56a3f2, 10%);
 
   // border
-  --he-color-border-primary: #56a3f2;
-  --he-color-border-special: rgba(216, 222, 231, 0.5);
+  --m-color-border-primary: #56a3f2;
+  --m-color-border-special: rgba(216, 222, 231, 0.5);
 
   // table
-  --he-color-table-td-active: #b2d5ff;
+  --m-color-table-td-active: #b2d5ff;
 }
 
 // 不变的
 :root {
   // color
-  --he-color-placeholder: #b2b2b2;
-  --he-color-success: #1eac52;
-  --he-color-danger: #fa5151;
-  --he-color-link: #1e80e5;
-  --he-color-red: red;
-  --he-color-true-white: white; // 一定是白色
-  --he-color-true-black: black; // 一定是黑色
+  --m-color-placeholder: #b2b2b2;
+  --m-color-success: #1eac52;
+  --m-color-danger: #fa5151;
+  --m-color-link: #1e80e5;
+  --m-color-red: red;
+  --m-color-true-white: white; // 一定是白色
+  --m-color-true-black: black; // 一定是黑色
 
-  --he-color-border: fade(#d8dee7, 50%);
+  --m-color-border: fade(#d8dee7, 50%);
 
   // bg
-  --he-color-bg-success: #1eac52;
-  --he-color-bg-danger: #fa5151;
-  --he-color-bg-switch: #afb5c0;
-  --he-color-bg-disabled: #f0f1f3;
+  --m-color-bg-success: #1eac52;
+  --m-color-bg-danger: #fa5151;
+  --m-color-bg-switch: #afb5c0;
+  --m-color-bg-disabled: #f0f1f3;
 
   // active
-  --he-color-success-active: darken(#1eac52, 10%);
-  --he-color-danger-active: darken(#fa5151, 10%);
-  --he-color-bg-success-active: darken(#1eac52, 10%);
-  --he-color-bg-danger-active: darken(#fa5151, 10%);
+  --m-color-success-active: darken(#1eac52, 10%);
+  --m-color-danger-active: darken(#fa5151, 10%);
+  --m-color-bg-success-active: darken(#1eac52, 10%);
+  --m-color-bg-danger-active: darken(#fa5151, 10%);
 
   // 字体尺寸
-  --he-size-line-height: 1.33;
-  --he-size-text-12: 12px;
-  --he-size-text-14: 14px;
-  --he-size-text-16: 16px;
-  --he-size-text-18: 18px;
-  --he-size-text-20: 20px;
+  --m-size-line-height: 1.33;
+  --m-size-text-12: 12px;
+  --m-size-text-14: 14px;
+  --m-size-text-16: 16px;
+  --m-size-text-18: 18px;
+  --m-size-text-20: 20px;
 
   // 大小
-  --he-size-form-height: 30px;
-  --he-size-border-radius: 2px;
+  --m-size-form-height: 30px;
+  --m-size-border-radius: 2px;
 
   // 层级
-  --he-z-index-affix: 950;
-  --he-z-index-mask: 1000;
-  --he-z-index-right-side-modal-mask: 1040;
-  --he-z-index-right-side-modal: 1041;
-  --he-z-index-modal-mask: 1050;
-  --he-z-index-modal: 1051;
-  --he-z-index-tips: 7000;
+  --m-z-index-affix: 950;
+  --m-z-index-mask: 1000;
+  --m-z-index-right-side-modal-mask: 1040;
+  --m-z-index-right-side-modal: 1041;
+  --m-z-index-modal-mask: 1050;
+  --m-z-index-modal: 1051;
+  --m-z-index-tips: 7000;
 
   // 具体业务
   // nav
-  --he-nav-size-width: 92px;
+  --m-nav-size-width: 92px;
   // modal
-  --he-modal-size-title-height: 40px;
+  --m-modal-size-title-height: 40px;
   // switch
-  --he-switche-size-height: 22px;
+  --m-switcm-size-height: 22px;
   // border
-  --he-table-color-bg-head: #e8eaf0;
+  --m-table-color-bg-head: #e8eaf0;
   // head 上的动作，比如排序
-  --he-table-color-bg-head-action: #ccc;
-  --he-table-color-bg-head-action-active: #999;
-  --he-table-size-height-action-bar: 50px;
+  --m-table-color-bg-head-action: #ccc;
+  --m-table-color-bg-head-action-active: #999;
+  --m-table-size-height-action-bar: 50px;
   // card 标签
-  --he-card-bg-inactive: #d4d8d8;
+  --m-card-bg-inactive: #d4d8d8;
   // label 标签
-  --he-label-color-gray: #e8eaf0;
-  --he-label-color-inactive: #a5a8ad;
-  --he-label-color-danger: #d35147;
+  --m-label-color-gray: #e8eaf0;
+  --m-label-color-inactive: #a5a8ad;
+  --m-label-color-danger: #d35147;
   // checkbox radio
-  --he-checkbox-radio-color-disabled: #d4d8d8;
+  --m-checkbox-radio-color-disabled: #d4d8d8;
 }

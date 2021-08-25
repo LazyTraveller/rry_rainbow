@@ -9,18 +9,18 @@ const webpackFinal = (config) => {
           presets: [require.resolve("babel-preset-react-app")],
         },
       },
-      {
-        loader: require.resolve("react-docgen-typescript-loader"),
-        options: {
-          shouldExtractLiteralValuesFromEnum: true,
-          propFilter: (prop) => {
-            if (prop.parent) {
-              return !prop.parent.fileName.includes("node_modules");
-            }
-            return true;
-          },
-        },
-      },
+      // {
+      //   loader: require.resolve("react-docgen-typescript-loader"),
+      //   options: {
+      //     shouldExtractLiteralValuesFromEnum: true,
+      //     propFilter: (prop) => {
+      //       if (prop.parent) {
+      //         return !prop.parent.fileName.includes("node_modules");
+      //       }
+      //       return true;
+      //     },
+      //   },
+      // },
     ],
     exclude: /node_modules/
   });
@@ -82,4 +82,13 @@ module.exports = {
     "../src/components/**/*.stories.@(js|jsx|ts|tsx)",
   ],
   webpackFinal,
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      compilerOptions: {
+        allowSyntheticDefaultImports: false,
+        esModuleInterop: false,
+      },
+    }
+  }
 }

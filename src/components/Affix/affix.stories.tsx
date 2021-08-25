@@ -3,6 +3,14 @@ import { Affix } from './index'
 import { observable, toJS } from 'mobx'
 import _ from 'lodash'
 
+/**
+|--------------------------------------------------
+|  @Affix
+| #Component
+| 吸附底部或顶部
+|--------------------------------------------------
+*/
+
 const store = observable({
   data: [
     {
@@ -32,16 +40,13 @@ export const ComAffix = () => (
   <div>
     <div style={{ height: '400px' }}>
       <Affix top={0}>
-        <div style={{ backgroundColor: 'redxxx' }}>我会被钉住在顶部</div>
+        <div className='he-bg-primary'>我会被钉住在顶部</div>
       </Affix>
     </div>
-    {_.map(store.data, (item, index) => {
-      return <div key={index}>{item.text}</div>
-    })}
 
     <div style={{ height: '400px' }}>
       <Affix bottom={0}>
-        <div style={{ backgroundColor: 'red' }}>我会被钉住在底部</div>
+        <div className='he-bg-primary'>我会被钉住在底部</div>
       </Affix>
     </div>
   </div>
