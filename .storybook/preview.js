@@ -1,9 +1,7 @@
 import React from 'react'
 import { Observer } from 'mobx-react'
 import { addDecorator, addParameters } from '@storybook/react'
-
-import '../src/components/Affix/style.less' //👈 The app's CSS file goes here
-// import '../src/components/Affix/m.css' //👈 The app's CSS file goes here
+import '../src/index.less' //👈 The app's CSS file goes here
 
 console.warn('ggg', require('../src/components/Affix/style.less'))
 

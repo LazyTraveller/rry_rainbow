@@ -66,6 +66,7 @@ module.exports = {
     "@storybook/addon-links",
     "@storybook/addon-actions/register",
     "@storybook/addon-essentials",
+    // 如果不这个写，less 不生效
    {
      name: "@storybook/preset-create-react-app",
      options: {
