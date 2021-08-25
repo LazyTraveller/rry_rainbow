@@ -16,9 +16,10 @@ const Affix: FC<AffixProps> = ({ children, top, bottom }) => {
     style.bottom = `${bottom}px`
   }
   return (
-    <div className='b-affix' style={style}>
-      {children}
-    </div>
+    <>
+      <div className='h-affix'>{children}</div>
+      <div className='h-some'>some test</div>
+    </>
   )
 }
 

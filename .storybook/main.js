@@ -1,7 +1,7 @@
 const webpackFinal = (config) => {
 
   config.module.rules.push({
-    test: /\.tsx?$/,
+    test: /\.(tsx)?$/,
     use: [
       {
         loader: require.resolve("babel-loader"),
@@ -22,6 +22,7 @@ const webpackFinal = (config) => {
         },
       },
     ],
+    exclude: /node_modules/
   });
 
   config.module.rules.push({
@@ -32,21 +33,30 @@ const webpackFinal = (config) => {
       },
       {
         loader: 'css-loader',
+        options: {
+          importLoaders: 1,
+      },
       },
       {
         loader: require.resolve('postcss-loader'),
+        options: {
+          postcssOptions: {},
+        },
       },
       {
         loader: 'less-loader',
+        options: {
+          importLoaders: 2,
       },
+      },
+     
     ],
+    exclude: /\.module\.less$/
   })
 
-  config.resolve.extensions.push('.ts', '.tsx')
-  // config.resolve.alias.push({
-  //   react: path.resolve(__dirname, '..', 'node_modules/react'),
-  //   '@': path.resolve(__dirname, '..', 'src'),
-  // })
+  console.warn('config', config)
+  config.resolve.extensions.push('js','.ts', '.tsx')
+
   return config
 }
 

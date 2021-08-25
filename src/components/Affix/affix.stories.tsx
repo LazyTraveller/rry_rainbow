@@ -32,12 +32,13 @@ export const ComAffix = () => (
   <div>
     <div style={{ height: '400px' }}>
       <Affix top={0}>
-        <div style={{ backgroundColor: 'red' }}>我会被钉住在顶部</div>
+        <div style={{ backgroundColor: 'redxxx' }}>我会被钉住在顶部</div>
       </Affix>
     </div>
     {_.map(store.data, (item, index) => {
       return <div key={index}>{item.text}</div>
     })}
+
     <div style={{ height: '400px' }}>
       <Affix bottom={0}>
         <div style={{ backgroundColor: 'red' }}>我会被钉住在底部</div>

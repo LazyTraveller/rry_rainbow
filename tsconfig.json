@@ -24,7 +24,7 @@
     "types": [
       "classnames"
     ],
-    "jsx": "react",
+    "jsx": "react-jsx",
     "typeRoots": [
       "node",
       "node_modules/@types"
@@ -32,9 +32,6 @@
     "rootDirs": [
       "./src"
     ],
-    "paths": {
-      "@/*": ["src/*"],
-    },
     "baseUrl": "./src",
     "noFallthroughCasesInSwitch": true,
     "resolveJsonModule": true,
