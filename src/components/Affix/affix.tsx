@@ -14,7 +14,7 @@ const Affix: FC<AffixProps> = ({ children, top, bottom }) => {
   if (!_.isNil(bottom)) {
     style.bottom = `${bottom}px`
   }
-  return <div className='he-affix'>{children}</div>
+  return <div className='m-affix'>{children}</div>
 }
 
 export default Affix

@@ -1,31 +1,110 @@
-.storybook-button {
-  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 700;
-  border: 0;
-  border-radius: 3em;
-  cursor: pointer;
+.m-btn {
+  height: 30px;
+  min-width: 60px;
+  border-radius: 3px;
   display: inline-block;
-  line-height: 1;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 0 10px;
+  font-size:  12px;
+  line-height: 30px;
+  user-select: none;
+
+  &.m-btn-default {
+    .mBtnVar(var(--m-color-default), white, white);
+    border-color: var(--m-color-border);
+
+    &.m-btn-plain {
+      border-color: var(--m-color-border);
+      color: var(--m-color-default);
+    }
+  }
+
+  &.m-btn-primary {
+    .mBtnVar(white, var(--m-color-primary), var(--m-color-primary-active))
+  }
+
+  &.m-btn-success {
+    .mBtnVar(white, var(--m-color-success), var(--m-color-success-active))
+  }
+
+  &.m-btn-danger {
+    .mBtnVar(white, var(--m-color-danger), var(--m-color-danger-active))
+  }
+
+  &.m-btn-link {
+    background: transparent;
+    border-color: transparent;
+    color: var(--m-color-link);
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.disabled,
+    &[disabled] {
+      .mDisabled();
+    }
+  }
+
+  &.m-btn-small {
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    padding: 0 5px;
+  }
+
+  &.m-btn-middle {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+  }
+
+  &.m-btn-large {
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+  }
+
+  &.m-btn-block {
+    display: block;
+    width: 100%;
+  }
+
 }
-.storybook-button--primary {
-  color: white;
-  background-color: #1ea7fd;
+
+.mDisabled() {
+  opacity: 0.5 !important;
+  cursor:  not-allowed !important;
 }
-.storybook-button--secondary {
-  color: #333;
-  background-color: transparent;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+
+.mBtnVar(@color; @brand; @brandActive) {
+  background: @brand;
+  border-color: @brand;
+  color: @color;
+
+  &.m-btn-plain {
+    background: white;
+    border-color: @brand;
+    color: @brand;
+  }
+
+  &:hover:not([disabled]) {
+    background: @brandActive;
+    color: @color;
+  }
+
+  &.m-btn-default:not([disabled]):hover {
+    background: white;
+    color: var(--m-color-primary);
+    border-color: var(--m-color-primary);
+  }
+  
+  &.disabled,
+  &[disabled] {
+    .mDisabled();
+  }
 }
-.storybook-button--small {
-  font-size: 12px;
-  padding: 10px 16px;
-}
-.storybook-button--medium {
-  font-size: 14px;
-  padding: 11px 20px;
-}
-.storybook-button--large {
-  font-size: 16px;
-  padding: 12px 24px;
-}
-.dfdfdf {}
