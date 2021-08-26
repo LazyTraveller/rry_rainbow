@@ -14,7 +14,7 @@ type ButtonType = 'default' | 'primary' | 'success' | 'danger' | 'link'
 type ButtonSize = 'small' | 'middle' | 'large'
 type ButtonHTMLType = 'submit' | 'button' | 'reset'
 
-interface ButtonProps
+export interface ButtonProps
   extends AnchorHTMLAttributes<HTMLButtonElement | HTMLAnchorElement> {
   type?: ButtonType
   size?: ButtonSize

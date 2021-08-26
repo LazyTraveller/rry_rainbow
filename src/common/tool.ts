@@ -61,16 +61,6 @@ const strongPassword = (value: string): boolean => {
   return /^(?![0-9]+$)(?![a-z]+$)[0-9a-z]{8,}$/i.test(value)
 }
 
-let isWeixinMP: boolean | null = null
-const weixinMP = () => {
-  if (isWeixinMP === null) {
-    isWeixinMP =
-      window.__wxjs_environment === 'miniprogram' ||
-      /miniprogram/.test(window.navigator.userAgent.toLowerCase())
-  }
-  return isWeixinMP
-}
-
 let isiOS: boolean | null = null
 const iOS = () => {
   if (isiOS === null) {
@@ -95,7 +85,6 @@ const is = {
   alipay,
   mac,
   phone,
-  weixinMP,
   iOS,
   android,
 

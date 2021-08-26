@@ -1,0 +1,29 @@
+.m-divider {
+  .m-divider-line {
+    position: relative;
+  }
+
+  .m-divider-line::before {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+    background: var(--m-color-border);
+  }
+
+  &.m-divider-left {
+    .m-divider-line:first-child {
+      width: 1em;
+      max-width: 1em;
+    }
+  }
+
+  &.m-divider-right {
+    .m-divider-line:last-child {
+      width: 1em;
+      max-width: 1em;
+    }
+  }
+}

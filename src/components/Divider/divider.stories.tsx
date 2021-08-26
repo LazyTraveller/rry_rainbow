@@ -3,9 +3,11 @@ import { Divider } from './index'
 
 export const ComDivider = () => (
   <div>
-    <div style={{ height: '400px' }}>
-      <Divider />
-    </div>
+    <Divider>Align Center</Divider>
+    <Divider align='left'>Align Left</Divider>
+    <Divider align='right'>Align Right</Divider>
+    <div className='m-text-16'>No Children</div>
+    <Divider />
   </div>
 )
 
