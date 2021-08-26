@@ -12,4 +12,7 @@
 
     #发布
     yarn build-storybook
+    
+    # 发布到chromatic
+    yarn chromatic
   ```
