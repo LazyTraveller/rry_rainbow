@@ -8,7 +8,9 @@ import React, {
 import _, { isPlainObject } from 'lodash'
 import classNames from 'classnames'
 import is from '../../common/tool'
+import { Loading } from '../Loading'
 import './button.less'
+import { Flex } from 'components/Flex'
 
 type ButtonType = 'default' | 'primary' | 'success' | 'danger' | 'link'
 type ButtonSize = 'small' | 'middle' | 'large'
@@ -80,8 +82,10 @@ export const Button: FC<ButtonProps> = ({
       onClick={handleClick}
       style={style}
     >
-      {/* {loadFlag && <} */}
-      {children}
+      <Flex alignCenter justifyCenter>
+        {loadFlag && <Loading size='1em' />}
+        {children}
+      </Flex>
     </Div>
   )
 }

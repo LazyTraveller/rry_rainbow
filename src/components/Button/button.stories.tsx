@@ -68,7 +68,9 @@ export const ComButton = () => (
     <div className='m-margin-bottom-20'>
       <Button size='small'>小的</Button>
       <Button>默认</Button>
-      <Button size='large'>大的</Button>
+      <Button size='large' loading>
+        大的
+      </Button>
     </div>
     <br />
     block
@@ -81,7 +83,7 @@ export const ComButton = () => (
 )
 
 export default {
-  title: '布局/Button',
+  title: '表单/Button',
   component: Button,
   argTypes: {
     backgroundColor: { control: 'color' },

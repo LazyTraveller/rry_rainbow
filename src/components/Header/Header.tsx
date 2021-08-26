@@ -39,17 +39,15 @@ export const Header: FC<HeaderProps> = ({ user, onLogin, onLogout, onCreateAccou
       </div>
       <div>
         {user ? (
-          <Button size='small' onClick={onLogout}>
+          <Button plain onClick={onLogout}>
             Log out
           </Button>
         ) : (
           <>
-            <Button size='small' onClick={onLogin}>
+            <Button plain onClick={onLogin}>
               Log in
             </Button>
-            <Button size='small' onClick={onCreateAccount}>
-              Sign up
-            </Button>
+            <Button onClick={onCreateAccount}>Sign up</Button>
           </>
         )}
       </div>

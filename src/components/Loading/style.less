@@ -1,0 +1,35 @@
+.m-loading {
+  animation: m-loading-rotate 2s linear infinite;
+
+  .m-loading-path {
+    animation: m-loading-dash 1.5s ease-in-out infinite;
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: 0;
+    stroke-width: 2;
+    stroke:grey;
+    stroke-linecap: round;
+  }
+}
+
+@keyframes m-loading-rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes m-loading-dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -40px;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -120px;
+  }
+}
