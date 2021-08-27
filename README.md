@@ -15,6 +15,16 @@
     
     # 发布到chromatic
     yarn chromatic
+
+    # 发布到npm 
+    npm login
+    whoami 查看当前用户
+    npm publish
+
+    # 发布到npm的包名称为rry-ui
+    可使用npm install rry-ui
+    或者使用yarn add rry-ui 
+    进行安装使用或测试
   ```
   
 #### 组件进度
